@@ -6,7 +6,7 @@
     position: fixed;
     left: 0;
     top: 0;
-    background-color: rgb(244, 248, 250);
+    background-color: rgb(222, 235, 241);
     overflow-x: hidden;
     overflow-y: hidden;
     transition: 0.5s;
@@ -19,6 +19,9 @@
 /* Position the content inside the welcome overlay */
 
 #welcomePage {
+    background-image: url("https://i.pinimg.com/originals/5b/e0/b7/5be0b73f1cf83e98ef017ae024fe3086.gif");
+    background-position: center;
+    background-size: cover;
     z-index: 3;
 }
 
@@ -41,6 +44,9 @@
 /*** Username form page ***/
 
 #usernameFormPage {
+    background-image: url("https://www.teahub.io/photos/full/288-2888693_color-block-gif.gif");
+    background-position: center;
+    background-size: cover;
     z-index: 2;
 }
 
@@ -66,7 +72,7 @@
 }
 
 #usernameFormPage .title {
-    font-size: 200%;
+    font-size: 300%;
 }
 
 #usernameFormPage .usernameInput {
@@ -84,6 +90,7 @@
 /*** Spinner page ***/
 
 #spinnerPage {
+    background-image: url("https://i.makeagif.com/media/2-01-2016/r2LSxz.gif");
     z-index: 1;
 }
 
@@ -135,7 +142,6 @@ div.welcomeTitle h3 {
 /* Warpers */
 
 .container {
-    max-width: 80%;
     margin: auto;
     margin-top: 15px;
 }
@@ -145,7 +151,7 @@ div.welcomeTitle h3 {
 }
 
 .inbox_msg {
-    border: 1px solid skyblue;
+    border: 1px solid rgb(177, 223, 241);
     clear: both;
     overflow: hidden;
 }
@@ -206,14 +212,12 @@ div.welcomeTitle h3 {
 
 /* Date style */
 
-
-/* 
 .time_date {
     color: #747474;
     display: block;
     font-size: 12px;
     margin: 8px 0 0;
-} */
+}
 
 
 /* Input form style */
