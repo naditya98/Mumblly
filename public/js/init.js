@@ -220,7 +220,7 @@ function updatePeopleCounter(count) {
         people_counter.innerHTML =
             'There are currently ' + count + ' people connected !'
     } else {
-        people_counter.innerHTML = 'You are alone ... :\'('
+        people_counter.innerHTML = 'You are alone ... 😢:\'('
     }
 }
 
@@ -228,9 +228,9 @@ function updatePeopleCounter(count) {
 function updateInterlocutor(interlocutor) {
     let interlocPrinter = document.getElementById('interloc')
     if (interlocutor != undefined) {
-        interlocPrinter.innerHTML = 'You chat with : ' + interlocutor
+        interlocPrinter.innerHTML = 'You are connected with : 😇' + interlocutor
     } else {
-        interlocPrinter.innerHTML = 'Lets Connect and Chat ! Dont make noise here ! '
+        interlocPrinter.innerHTML = '😇 Lets Connect and Chat ! Do not make noise here 😇'
     }
 }
 
