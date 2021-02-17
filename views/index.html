@@ -6,7 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" type="text/css"
-		rel="stylesheet" </head>
+		rel="stylesheet"/>
 	<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 	<link rel="stylesheet" href="css/style.css" />
 	<link rel="stylesheet" href="css/uikit.min.css" />
@@ -16,24 +16,33 @@
 	<title>Mumble</title>
 	<meta name="description" content="Happy Mumbly ♡ \
 		Let's just go ahead for a talk . " />
+		<!-- fonts -->
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Amaranth:ital@1&display=swap" rel="stylesheet">  
 </head>
 
 <body>
 	<!-- Welcomme page overlay -->
 	<div id="welcomePage" class="overlay">
 		<div id="welcomeTitleContainer">
-			<div id="welcomeTitle">
-				<h1>♡ Welcome to Mumble Random Chat ♡</h1>
-			</div>
-			<div id="connectButton">
-				<button class="uk-button-primary uk-button-large" onclick="connect()">♡ Let's Go ♡</button>
-			</div>
+			<div>
+				<!-- <img src="https://i.ytimg.com/vi/tTxJ8a6bEO8/maxresdefault.jpg" alt="logo" class="logo"> -->
+				
+				<h1 class="main_header"> Welcome to our Random Chat </h1>
+				<h1>📮</h1>
+				<button class=" button" onclick="connect()"> Set Username </button>
+				
+			</div>	
 		</div>
 	</div>
 	<!-- Username form page overlay -->
 	<div id="usernameFormPage" class="overlay">
 		<div class="form">
-			<h3 class="title">Enter your name :</h3>
+			<h3 class="title">Enter a name :</h3>
 			<input id="usernameInputField" class="usernameInput" type="text" maxlength="14" autofocus />
 		</div>
 	</div>
@@ -61,8 +70,8 @@
 							<textarea rows="1" type="text" class="write_msg" id="userMessageInputField"
 								placeholder="Type your message here ..."></textarea>
 						</div>
-						<button class="msg_send_btn" uk-tooltip="title: So ? We hesitate ?; delay: 5000" type="button"
-							onclick="sendMessage(socket)"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button>
+						<!-- <button class="msg_send_btn" uk-tooltip="title: So ? We hesitate ?; delay: 5000" type="button"
+							onclick="sendMessage(socket)"><i class="fa fa-paper-plane-o" aria-hidden="true"></i></button> -->
 					</div>
 				</div>
 			</div>
